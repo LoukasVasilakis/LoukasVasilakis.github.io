@@ -1,0 +1,211 @@
+<!DOCTYPE html> <!-- Document types require a ! -->
+<!-- html ist eine non-sensitive language, also HTML = html = HtMl -->
+<html lang="en"> <!-- root element, starting point, attribute lang decides the language of the page -->
+
+<!-- This is how to write html comments -->
+<!-- index.html ist verantwortlich für die Grundstruktur der Seite -->
+<!-- Texten zwischen <> werden als "tagname" bezeichnet -->
+<!-- <starting tag> </closing tag> -->
+<!-- <starting tag> kann ein Attribut haben: <tagname id="description"> es gibt kein Komma zwischen tagname und Attribut-->
+
+<head> <!-- Where the title of the page and metadata (settings not shown to the user) are written -->
+    <meta name="description" content="HTML Portfolio page to display my experience and skills">  <!-- Provides a short description of the page, e.g. for search engines -->
+    <meta charset="UTF-8"> <!-- Defines the character encoding of the page as UTF-8 -->
+    <meta name="keywords" content="HTML, HTML5, CSS, JAVASCRIPT, PORTFOLIO">
+    <meta name="author" content="Loukas Vasilakis">
+    <meta name="robots" content="index,follow"> <!-- Allows search engines to index the page and follow the links to it -->
+    <title>Loukas Vasilakis</title> <!-- Title of html page -->
+    <link rel="stylesheet" href="style.css">  <!-- Link tag the HTML page to the external CSS file for styling -->
+
+</head>
+
+<body>
+
+<header class="header"> <!-- ermöglicht Obertitel und seine "Kinder" zusammen zu wählen -->
+
+    <div class="header-content">
+    <h1 id="myname">   Loukas Vasilakis</h1> <!-- Das Element ein id-Attribut geben, um in css  genau diesen Element wählen zu können -->
+        <p class="text" id="message">Ein Blick auf meinen Weg, meine Skills und meine Projekte.</p>  <!-- tags wie <i> können den Text Eigenschaften geben, sie heissen Elements -->
+
+        <div class="links"> <!-- Das Element ein class-Attribut geben, was ermöglicht mehrere Elementen im gleichen class gleichmässig, -zeitig bearbeiten -->
+        <a class="link cv-download"
+           href="pdf/Loukas%20Vasilakis%20Lebenslauf%20-%201%20Seite.pdf"
+           download>
+            CV
+        </a>
+        <a class="link" href="blog.html">Blog</a>
+        <a class="link" href="https://github.com/LoukasVasilakis">Projects</a>
+        </div>
+
+        <section class="Index-boxes">
+        <h2 class="index_untertittel">About Me</h2>
+        <p class="text">My name is Loukas Vasilakis. I grew up in Greece and moved to Switzerland in 2014.
+        I am currently pursuing a Bachelor's degree in Data Science at FHNW. Before beginning my studies,
+        I completed an apprenticeship as an optician in Basel and subsequently worked in the field.
+        My professional experience taught me how to understand individual needs, analyze different situations,
+        and  offer tailored solutions. Over time, I discovered that I particularly enjoyed the analytical aspects of my work.
+        This interest in understanding complex problems and finding effective solutions ultimately motivated me to pursue a
+        degree in Data Science. Beyond data science and software development, I enjoy traveling and literature.</p>
+        </section>
+
+    </div>
+    <img class="profile-photo" alt="Profile photo" src="img/profile_photo.jpg"> <!-- Foto in Seite einfügen -->
+
+
+</header>
+
+<section class="skills-section">
+
+    <h2 id="professional-skills" class="index_untertittel"> Professional Skills </h2>
+
+    <div class="skills-grid">
+
+        <div class="Index-boxes">
+            <h3>Programming Languages</h3>
+            <p class="text">Python, Java, SQL, HTML, CSS</p>
+        </div>
+
+        <div class="Index-boxes">
+            <h3>Data Science & Machine Learning</h3>
+            <p class="text">
+                Data Analysis, Machine Learning,
+                Predictive Modeling, Data Visualization
+            </p>
+        </div>
+
+        <div class="Index-boxes">
+            <h3>Tools & Technologies</h3>
+            <p class="text">
+                Git, GitHub, Jupyter Notebook,
+                Scikit-learn, Django
+            </p>
+        </div>
+
+        <div class="Index-boxes">
+            <h3>Communication</h3>
+            <p class="text">
+                Customer Consulting, Presentation,
+                Problem Solving, Communication
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="my_projects">
+
+    <h2 id="my_projects" class="index_untertittel"> My Projects </h2>
+
+    <div class="projects-grid">
+
+        <div class="Index-boxes">
+            <img class="project-image"
+                 src="img/recommender.png"
+                 alt="Recommender System Project">
+            <h3>Recommender Systems</h3>
+            <ul> <!-- Bulletpoint-Liste machen -->
+                <li>Implemented recommender systems from scratch using the MovieLens dataset</li>
+                <li>Systematically evaluated and compared different approaches on a test set, including hyperparameter optimization</li>
+            </ul>
+                <a class="link project-link"
+                    href="https://github.com/LoukasVasilakis/Recommender-Systems-LV"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+        </div>
+
+        <div class="Index-boxes">
+            <img class="project-image"
+                 src="img/mud_project.png"
+                 alt="STRAG AG Data Analysis Project">
+            <h3>Failure Analysis of a Sludge Drying Plant for STRAG AG</h3>
+                <ul>
+                    <li>Analyzed sensor data from a sludge drying plant to identify potential failure patterns</li>
+                    <li>Python, Pandas, NumPy, Exploratory Data Analysis (EDA)</li>
+                </ul>
+            <a class="link project-link"
+                href="https://github.com/LoukasVasilakis/schlamm_trockung"
+                target="_blank"
+                rel="noopener noreferrer">
+                View on GitHub
+            </a>
+        </div>
+
+        <div class="Index-boxes">
+            <img class="project-image"
+                 src="img/optic_project.png"
+                 alt="Sublim Verhaltensänderungen">
+            <h3>Subtle Behavioral Changes for FHNW, Institute of Optometry</h3>
+                <ul>
+                    <li>Analyzed blinking behavior in response to mechanical stimuli</li>
+                    <li>Python, Pandas, NumPy, OpenCV</li>
+                </ul>
+            <a class="link project-link"
+                href="https://github.com/LoukasVasilakis/optic_project"
+                target="_blank"
+                rel="noopener noreferrer">
+                View on GitHub
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="experience">
+
+    <h2 id="my_experience" class="index_untertittel"> Experience </h2>
+
+    <div class="experience-grid">
+
+        <div class="Index-boxes">
+
+            <h3>Optician</h3>
+            <h4><small>August 2017 – Juni 2024</small></h4>
+            <p> Provided professional customer service and advice, fitted and sold eyewear,
+                handled customer complaints, and performed general administrative tasks.
+            </p>
+        </div>
+
+        <div class="Index-boxes">
+            <h3>Data Science</h3>
+            <h4><small>September 2024 – August 2027</small></h4>
+                <p> Software development, recommender systems, machine learning fundamentals, data visualization,
+                    and databases.
+                </p>
+        </div>
+
+        <div class="Index-boxes">
+
+            <h3>Civil Service</h3>
+            <h4><small>Februar 2019 – Today</small></h4>
+                <p> Performed forestry and woodworking tasks, building clearance and demolition, maintenance
+                    and repair of pathways and natural areas, and general cleaning and upkeep duties.
+                </p>
+        </div>
+
+    </div>
+
+    <div class="CV" id="cv">
+
+        <h2 class="index_untertittel"> Curriculum Vitae </h2>
+
+        <iframe
+            src="pdf/Loukas%20Vasilakis%20Lebenslauf%20-%201%20Seite.pdf"
+            title="My Curriculum Vitae">
+        </iframe>
+
+        <a class="link cv-download"
+           href="pdf/Loukas%20Vasilakis%20Lebenslauf%20-%201%20Seite.pdf"
+           download>
+            Download CV
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
