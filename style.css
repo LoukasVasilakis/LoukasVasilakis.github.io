@@ -41,11 +41,18 @@ h1#myname { /* h1 direkt dekorieren, #myname ist ein CSS-id-Selektor hilft uns h
 
 .header {
     display: flex;
-    flex-direction: row;           /* Text und Foto nebeneinander */
-    justify-content: space-between; /* Text links, Foto rechts */
-    align-items: flex-start;       /* Beide oben ausrichten */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 30px;
     padding: 30px 80px;
+
+    /* Background image */
+    background-color: aliceblue;
+    background-image: url("img/Minimal Icy Blue Lens Studio Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header-content {
@@ -79,11 +86,8 @@ h1#myname { /* h1 direkt dekorieren, #myname ist ein CSS-id-Selektor hilft uns h
 }
 
 body {
+    margin: 0;
     background-color: aliceblue;
-    background-image: url("img/Minimal Icy Blue Lens Studio Background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .profile-photo {
@@ -443,5 +447,30 @@ h2#post1_untertittel {
         font-size: 15px;
         line-height: 1.7;
         text-align: left;
+    }
+}
+
+/* Responsive Header */
+
+.header-content {
+    min-width: 0;
+    flex: 1;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .profile-photo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        align-self: center;
     }
 }
