@@ -395,14 +395,17 @@ h2#post1_untertittel {
 .post1-container .footer .link {
     font-family: sans-serif;
     font-size: 16px;
-    color: #FFFFFF;
+    color: aliceblue;
+    background-color: #1a2b3c;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
 }
 
+/* Same hover effect as other buttons */
 .post1-container .footer .link:hover {
-    color: #FFFFFF;
-    text-decoration: underline;
+    background-color: aliceblue;
+    color: #1a2b3c;
 }
 
 /* =========================================
