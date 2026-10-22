@@ -326,14 +326,14 @@ body { /* body direkt dekorieren */
 
 h1#post_obertittel {
     font-size: 45px;
-    color: honeydew;
+    color: yellowgreen;
     margin-bottom: 5px;
      font-family: sans-serif;
 }
 
 h2#post_untertittel {
     font-size: 22.5px;
-    color: honeydew;
+    color: yellowgreen;
     margin-bottom: 5px;
     font-family: sans-serif;
 }
@@ -351,6 +351,6 @@ body.post1-page {
     font-family: sans-serif;
     line-height: 1.8;
     text-align: justify;
-    color: honeydew;
+    color: yellowgreen;
 
 }
