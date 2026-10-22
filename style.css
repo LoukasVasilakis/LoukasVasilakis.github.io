@@ -322,22 +322,11 @@ body { /* body direkt dekorieren */
     padding: 0;
 }
 
-/* Post 1 Elementen */
+/* =========================================
+   POST 1 - MOTIVATION LETTER
+   ========================================= */
 
-h1#post_obertittel {
-    font-size: 45px;
-    color: yellowgreen;
-    margin-bottom: 5px;
-     font-family: sans-serif;
-}
-
-h2#post_untertittel {
-    font-size: 22.5px;
-    color: yellowgreen;
-    margin-bottom: 5px;
-    font-family: sans-serif;
-}
-
+/* Page background */
 body.post1-page {
     background-image: url("img/brille_laptop.jpeg");
     background-size: cover;
@@ -345,12 +334,104 @@ body.post1-page {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
+/* Main container */
+.post1-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+}
+
+/* Main title */
+h1#post1_obertittel {
+    font-family: sans-serif;
+    font-size: 45px;
+    color: yellowgreen;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+h2#post1_untertittel {
+    font-family: sans-serif;
+    font-size: 22.5px;
+    color: yellowgreen;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+/* Motivation letter paragraphs */
 .text_blog_post1 {
     font-family: sans-serif;
+    font-size: 17px;
     line-height: 1.8;
     text-align: justify;
-    color: yellowgreen;
+    color: #FFFFFF;
 
+    margin-bottom: 22px;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    overflow-wrap: break-word;
+}
+
+/* Footer */
+.post1-container .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Back to Blog link */
+.post1-container .footer .link {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: yellowgreen;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.post1-container .footer .link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN - MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    body.post1-page {
+        padding: 20px 12px;
+        background-attachment: scroll;
+    }
+
+    .post1-container {
+        margin: 15px auto;
+        padding: 25px 20px;
+    }
+
+    h1#post1_obertittel {
+        font-size: 32px;
+    }
+
+    h2#post1_untertittel {
+        font-size: 19px;
+    }
+
+    .text_blog_post1 {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
 }
