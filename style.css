@@ -356,7 +356,7 @@ body.post1-page {
 h1#post1_obertittel {
     font-family: sans-serif;
     font-size: 45px;
-    color: Red;
+    color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -365,7 +365,7 @@ h1#post1_obertittel {
 h2#post1_untertittel {
     font-family: sans-serif;
     font-size: 22.5px;
-    color: yellowgreen;
+    color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 35px;
 }
@@ -395,7 +395,7 @@ h2#post1_untertittel {
 .post1-container .footer .link {
     font-family: sans-serif;
     font-size: 16px;
-    color: yellowgreen;
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.2s ease;
 }
