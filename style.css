@@ -78,8 +78,12 @@ h1#myname { /* h1 direkt dekorieren, #myname ist ein CSS-id-Selektor hilft uns h
     font-family: sans-serif;
 }
 
-body { /* body direkt dekorieren */
+body {
     background-color: aliceblue;
+    background-image: url("img/Minimal Icy Blue Lens Studio Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-photo {
