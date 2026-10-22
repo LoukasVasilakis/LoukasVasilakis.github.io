@@ -47,12 +47,7 @@ h1#myname { /* h1 direkt dekorieren, #myname ist ein CSS-id-Selektor hilft uns h
     gap: 30px;
     padding: 30px 80px;
 
-    /* Background image */
     background-color: aliceblue;
-    background-image: url("img/Minimal Icy Blue Lens Studio Background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .header-content {
@@ -473,4 +468,47 @@ h2#post1_untertittel {
         height: auto;
         align-self: center;
     }
+}
+
+/* =========================================
+   DECORATIVE LENSES - ALL INDEX SECTIONS
+   ========================================= */
+
+/* Sections containing the lenses */
+.header,
+.skills-section,
+.my_projects,
+.experience {
+    position: relative;
+    isolation: isolate;
+}
+
+/* Transparent lens layer */
+.header::before,
+.skills-section::before,
+.my_projects::before,
+.experience::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("img/Minimal Icy Blue Lens Studio Background.png");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    opacity: 0.60;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Keep all content above the lenses */
+.header > *,
+.skills-section > *,
+.my_projects > *,
+.experience > * {
+    position: relative;
+    z-index: 1;
 }
