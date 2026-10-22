@@ -512,3 +512,12 @@ h2#post1_untertittel {
     position: relative;
     z-index: 1;
 }
+
+/* Experience & CV - Repeat decorative lenses vertically */
+
+.experience::before {
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat-y;
+    opacity: 0.5;
+}
